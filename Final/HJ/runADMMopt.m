@@ -30,7 +30,7 @@ function [d_new] = prox_g(z, t)
     d_new = [0;0];
     if z>t
         d_new = z-t;
-    elseif z<t
+    elseif z<-t
         d_new = z+t;
     end
     
